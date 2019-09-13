@@ -7,7 +7,7 @@ from tkinter import *
 from numpy import *
 from PIL import Image, ImageTk
 
-os.chdir("C:\\Users\\tangz\\Desktop")
+os.chdir("C:\\Users\\tangz\\Documents\\GitHub\\Ned")
 count=-1
 
 
@@ -35,7 +35,7 @@ def on_closing():
     ned=ones(arr)-Frequecy/Overall
     word.正确率=pd.Series(ned)
     if min(Overall)> 5:
-        word[word['正确率'] >0.8]
+        word=word[word['正确率'] >0.8]
     word.to_csv("Mywords.csv",encoding='utf_8_sig',index=False)
     root.destroy()
 
@@ -96,7 +96,7 @@ root.resizable(False, False)
 root.update_idletasks()
 root.deiconify()  # now window size was calculated
 root.withdraw()  # hide window again
-root.geometry("180x220+550+120")
+root.geometry("180x220+550+200")
 root.deiconify()
 root.attributes("-alpha",0.9)
 root.protocol("WM_DELETE_WINDOW", on_closing)
