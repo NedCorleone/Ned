@@ -141,17 +141,17 @@ text = Text(root, width=15, height=1,font=('',12))  # 30的意思是30个平均�
 text.tag_add("center", "1.0", "end")
 #text.bind("<Return>",search)
 text.pack()
-text.place(x=28,y=20)
+text.place(x=18,y=20)
 
 
 
 text4 = Label(root, width=15, height=1,font=('',12))  # 30的意思是30个平均字符的宽度，height设置为两行
 text4.pack(anchor=CENTER)
-text4.place(x=28,y=90)
+text4.place(x=18,y=90)
 
 text2 = Label(root, width=20, height=1, font=('',10))  # 30的意思是30个平均字符的宽度，height设置为两行
 text2.pack()
-text2.place(x=18,y=150)
+text2.place(x=10,y=150)
 text3=Label(root,width=10,height=1,text=arr)
 text3.pack(side='left')
 text3.config( fg='Purple')
