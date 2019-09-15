@@ -3,9 +3,13 @@ import tkinter
 from tkinter import *
 from numpy import *
 from PIL import Image, ImageTk
-import os
+#import os
+#import sys
 
-os.chdir("C:\\Users\\tangz\\Documents\\GitHub\\Ned")
+'''if sys.version[0:3]=="3.6":
+    os.chdir("C:\\Users\\hp\\Documents\\GitHub\\Ned")
+else:
+    os.chdir("C:\\Users\\tangz\\Documents\\GitHub\\Ned")'''
 count=-1
 
 
@@ -114,15 +118,15 @@ canvas.pack()
 
 text = Label(root, width=15, height=1,font=('',12))  # 30的意思是30个平均字符的宽度，height设置为两行
 text.pack()
-text.place(x=19,y=20)
+text.place(x=28,y=20)
 
 text4 = Label(root, width=15, height=1,font=('',12))  # 30的意思是30个平均字符的宽度，height设置为两行
 text4.pack(anchor=CENTER)
-text4.place(x=19,y=90)
+text4.place(x=28,y=90)
 
 text2 = Label(root, width=15, height=1, font=('',12))  # 30的意思是30个平均字符的宽度，height设置为两行
 text2.pack()
-text2.place(x=19,y=150)
+text2.place(x=28,y=150)
 text3=Label(root,width=10,height=1,text=arr)
 text3.pack(side='left')
 text3.config( fg='Purple')
