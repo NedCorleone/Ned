@@ -1,0 +1,12 @@
+
+*.xml
+*.iml
+*.igitignore
+*.pyc
+*.toc
+*.manifest
+*.txt
+*.pkg
+*.html
+*.zip
+*.pyz
